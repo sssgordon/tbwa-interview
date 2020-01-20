@@ -105,10 +105,10 @@ body {
 
 .headlines h1 {
     color: #fff;
-    font-size: 14rem;
+    font-size: 13rem;
     letter-spacing: -4px;
     line-height: 120%;
-    transform: scaleY(0.95);
+    transform: scaleY(1.05);
 }
 
 .headlines p {
@@ -135,18 +135,19 @@ body {
     transform: skewX(-20deg);
     color: #000;
     font-size: 2.3rem;
+    font-weight: 800;
 }
 
 .backslash {
     width: 100%;
     font-size: 90rem;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 70%;
 
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-51%, -50%) scale(1.2, 1.08);
+    transform: translate(-50%, -50%) scale(1.1, 1.18);
 
     background: repeating-linear-gradient(
         0deg,
