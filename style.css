@@ -1,0 +1,179 @@
+@keyframes bgAnimationDown {
+    0% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes bgAnimationUp {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #fff;
+
+    box-sizing: border-box;
+}
+
+.logo {
+    position: fixed;
+    top: 2rem;
+    left: 2.7vw;
+    z-index: 100;
+
+    cursor: pointer;
+}
+
+.logo img {
+    height: 3rem;
+}
+
+.about-intro {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-splash {
+    width: 100%;
+    height: 100%;
+
+    background-position: center center;
+    /* background-position-x: initial;
+    background-position-y: initial; */
+
+    background: repeating-linear-gradient(
+        0deg,
+        #ee749d,
+        #ee749d 20px,
+        #000 20px,
+        #000 40px
+    );
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgb(238, 116, 157),
+        rgb(238, 116, 157) 20px,
+        rgb(0, 0, 0) 20px,
+        rgb(0, 0, 0) 40px
+    );
+    background-size: 200% 200%;
+    /* background-repeat: initial; */
+    background-attachment: fixed;
+    /* background-origin: initial;
+    background-color: initial; */
+
+    animation: bgAnimationDown 20s linear infinite;
+
+    text-align: center;
+    direction: ltr;
+}
+
+.headlines {
+    /* width: 100%; */
+    z-index: 1;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    padding-top: 6.5rem;
+}
+
+.headlines h1 {
+    color: #fff;
+    font-size: 12rem;
+    letter-spacing: -4px;
+    line-height: 120%;
+    transform: scaleY(0.95);
+}
+
+.headlines p {
+    line-height: 100%;
+}
+
+.slanted-button {
+    margin-top: 3rem;
+
+    transform: skewX(20deg);
+    transform-origin: 0 0;
+    background-color: #fff;
+    display: inline-block;
+    padding: 0.9rem 1.3rem;
+    text-decoration: none;
+    cursor: pointer;
+    min-width: 13rem;
+
+    /* GSAP */
+    box-shadow: inset 0 0 0 0 #fecc00;
+}
+
+.about-video-watch {
+    transform: skewX(-20deg);
+    color: #000;
+    font-size: 2.3rem;
+}
+
+.backslash {
+    width: 100%;
+    font-size: 75rem;
+    font-weight: 900;
+    line-height: 70%;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%, -50%) scale(1.2, 1.08);
+
+    background: repeating-linear-gradient(
+        0deg,
+        #ee749d,
+        #ee749d 25px,
+        #000 25px,
+        #000 50px
+    );
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgb(238, 116, 157),
+        rgb(238, 116, 157) 25px,
+        rgb(0, 0, 0) 25px,
+        rgb(0, 0, 0) 50px
+    );
+    /* background-position-x: initial;
+    background-position-y: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-color: initial; */
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* -webkit-font-smoothing: subpixel-antialiased; */
+    color: transparent;
+    overflow: visible;
+
+    animation: bgAnimationUp 40s linear infinite;
+}
