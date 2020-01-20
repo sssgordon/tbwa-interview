@@ -105,7 +105,7 @@ body {
 
 .headlines h1 {
     color: #fff;
-    font-size: 12rem;
+    font-size: 14rem;
     letter-spacing: -4px;
     line-height: 120%;
     transform: scaleY(0.95);
@@ -139,7 +139,7 @@ body {
 
 .backslash {
     width: 100%;
-    font-size: 75rem;
+    font-size: 90rem;
     font-weight: 900;
     line-height: 70%;
 
