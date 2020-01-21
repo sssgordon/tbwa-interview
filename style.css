@@ -52,6 +52,8 @@ body {
 /* menu */
 
 .menu-container {
+    visibility: hidden;
+    opacity: 0;
     z-index: 1000;
     position: fixed;
     width: 100%;
@@ -60,18 +62,20 @@ body {
 }
 
 .menu-dark-bg {
+    visibility: hidden;
+    opacity: 0;
     background-color: #000;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    opacity: 0;
-    /* opacity: 0.4; */
 }
 
 .menu-slash-bg {
-    /* visibility: hidden; */
-    left: 24vw;
+    visibility: hidden;
+    opacity: 0;
+
+    left: 110vw;
     width: 90%;
     height: 100%;
     overflow: hidden;
@@ -109,7 +113,13 @@ body {
     padding: 0 3rem 0 7.2rem;
 
     box-shadow: inset 0 0 0 0 #fecc00;
-    /* animate */
+
+    transition: all ease 0.2s;
+}
+
+.main-menu ul li a:hover {
+    color: #fff;
+    box-shadow: inset 60rem 0 0 0 #fecc00;
 }
 
 .main-menu ul li span {
@@ -155,7 +165,7 @@ body {
     display: inline-block;
     position: relative;
     top: 1.5rem;
-    left: 7rem;
+    left: 10rem;
 
     font-size: 1.4rem;
     color: #1a1a1a;
@@ -335,6 +345,7 @@ body {
 
     /* GSAP */
     box-shadow: inset 0 0 0 0 #fecc00;
+    transition: box-shadow 0.1s ease;
 }
 
 .about-video-watch {
@@ -344,11 +355,16 @@ body {
     font-weight: 800;
 }
 
+.slanted-button:hover {
+    box-shadow: inset 0 -5rem 0 0 #fecc00;
+}
+
 .backslash {
     width: 100%;
     font-size: 90rem;
     font-weight: 700;
     line-height: 70%;
+    cursor: default;
 
     position: fixed;
     top: 50%;
