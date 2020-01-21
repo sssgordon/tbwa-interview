@@ -18,13 +18,13 @@ $(".menu-button").click(function() {
             y: 0,
             rotation: 0,
             backgroundColor: "white",
-            duration: 0.2
+            duration: 0.3
         });
         gsap.to(".hamburger-bottom", {
             y: 0,
             rotation: 0,
             backgroundColor: "white",
-            duration: 0.2
+            duration: 0.3
         });
 
         //menu
@@ -35,13 +35,13 @@ $(".menu-button").click(function() {
             y: "0.6rem",
             rotation: 45,
             backgroundColor: "black",
-            duration: 0.2
+            duration: 0.1
         });
         gsap.to(".hamburger-bottom", {
             y: "-0.6rem",
             rotation: -45,
             backgroundColor: "black",
-            duration: 0.2
+            duration: 0.1
         });
 
         // menu
