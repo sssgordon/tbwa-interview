@@ -128,11 +128,11 @@ body {
     top: 2.5rem;
     left: 2rem;
     transform: skewX(-20deg);
-    z-index: 20;
+    z-index: 300;
 }
 
 .secondary-menu-container {
-    float: none;
+    float: left;
     margin-right: 2rem;
     min-width: 10rem;
 }
@@ -151,9 +151,11 @@ body {
 }
 
 .contact-info-container {
+    float: left;
     display: inline-block;
     position: relative;
-    top: 5rem;
+    top: 1.5rem;
+    left: 7rem;
 
     font-size: 1.4rem;
     color: #1a1a1a;
@@ -197,13 +199,13 @@ body {
     display: flex;
     justify-content: space-between;
 
-    padding-top: 12rem;
-    width: 17rem;
+    margin-top: 37rem;
+    width: 15rem;
 
     position: absolute;
     left: 0;
 
-    z-index: 200;
+    z-index: 100;
 }
 
 .icon {
